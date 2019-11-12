@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "chai": "^4.2.0",
+    "dotenv": "^8.2.0",
     "mocha": "^6.2.2",
     "tuyapi": "github:codetheweb/tuyapi"
   }

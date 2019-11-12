@@ -9,3 +9,5 @@ describe('Tuya API', function() {
     expect(tuyaAPI).to.be.a('Function');
   });
 });
+
+

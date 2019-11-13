@@ -1,13 +1,11 @@
 const chai = require('chai');
-const expect = chai.expect;
+const tuyaAPI = require('tuyapi');
+
+const { expect } = chai;
 
 
-describe('Tuya API', function() {
-  it('should return a function', function() {
-    const tuyaAPI = require('tuyapi');
-
+describe('Tuya API', function () {
+  it('should return a function', function () {
     expect(tuyaAPI).to.be.a('Function');
   });
 });
-
-

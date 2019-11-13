@@ -1,10 +1,11 @@
 const chai = require('chai');
-const expect = chai.expect;
+const { env, devices } = require('../src/env.js');
 
-describe('Environment Tests', function() {
-  it('should load from file if dev environment', function() {
-    let {env, devices} = require('../src/env.js');
-    if(env !== 'production'){
+const { expect } = chai;
+
+describe('Environment Tests', function () {
+  it('should load from file if dev environment', function () {
+    if (env !== 'production') {
       expect(devices.length).to.be.at.least(2);
     }
   });

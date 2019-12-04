@@ -1,5 +1,5 @@
 const chai = require('chai');
-const { env, devices } = require('../src/env.js');
+const { env, devices } = require('../src/config/env.js');
 
 const { expect } = chai;
 
